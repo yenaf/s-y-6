@@ -1,0 +1,39 @@
+<!-- 주석단축키 control + / -->
+<!-- 주석은 컴퓨터를 위한것이 아닌 개발자==사람을 위한것이기때문에 화면에 표시되지 않는다 -->
+
+<!-- emmet : 코드 구조를 자동으로 만들어준다 (! + tab: 자동으로 html5구조를 만들어 줌)-->
+<!-- html5로 문서를 작성하겠다.(DOCTYPE : document type) -->
+<!DOCTYPE html>
+<!-- lang 속성 : language (en, ko) -->
+<html lang="ko">
+<head>
+    <!-- 인코딩 방식 지정 / 인코딩? 사람이 작성한 코드를 컴퓨터가 이해하는 코드로 변경 -->
+    <meta charset="UTF-8">
+    <!-- 모바일, 반응형 웹에서 인식할 수 있는 태그 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 문서의 제목 -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- 브라우저 화면에서 보여주고 싶은 내용 - 본문 -->
+    <!-- emmet : 태그이름 + tab -->
+    <h1>html 문서입니다.</h1>
+    <div>안녕하세요</div>
+
+    <!-- 중첩: nested -->
+    <!-- div: 블록(block)요소 : 100% 공간차지-->
+    <!-- span: 인라인(inline)요소 : 본인크기만큼만 차지, 개행처리 되지않음 -->
+    <!-- tab: 들여쓰기, shift + tab: 내어쓰기 -->
+    <div style="background-color: red;">
+        span의 parent
+        <span style="background-color: pink;">div의 chlid</span>
+        <span style="background-color: yellow;">div의 chlid</span>
+    </div>
+    <div style="background-color: blue;">
+        또다른 div
+    </div>
+    
+
+    
+</body>
+</html>
