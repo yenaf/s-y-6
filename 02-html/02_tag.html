@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag 종류</title>
+</head>
+<body>
+    <h1>Tag 종류에 대해 배워보자!</h1>
+    <h2>두번째로 큰 제목</h2>
+    <h3>3번째로 큰 제목</h2>
+    <h4>4번째로 큰 제목</h2>
+    <h5>5번째로 큰 제목</h2>
+    <h6>6번째로 큰 제목</h2>
+    
+    <!-- 잘못된 태그를 쓴다고해서 브라우저에서 에러가 나는것은 아니다 -->
+    <h7>7번째??h7은없음</h2>
+
+    <!-- 코드에서 엔터를 친다고해서 html상에서 한줄이 띄워지는것은 아니다 -->
+    <p>본문영역입니다</p>
+    <br>
+    <p>본문영역입니다2</p>
+
+    <hr>
+
+    <h3>오늘의 할일</h3>
+
+    <!-- ul tag type attribute:disc(default), square, circle, none -->
+    <ul>
+        <li type="square">html 복습</li>
+        <li type="circle">운동</li>
+        <li type="none">git 명령어 연습</li>
+    </ul>
+    <hr>
+
+    <h3>아이스 카페라떼 레시피</h3>
+    <!-- ol tag type attribute: 1(default), a, A,.. -->
+    <!-- start: 시작번호, reversed: 역순으로 -->
+    <ol type="a" start="4" reversed>
+        <!-- strong: 강조(내용적으로도 중요한것) em:이탤릭체(내용적으로 중요한것)-->
+        <li><strong>우유</strong> <em>180ml</em>를 컵에 넣어주세요</li>
+        <!-- b: 굵은글씨(꾸밈의역할)-->
+        <li><b>얼음</b>을 컵에 가득 넣어주세요</li>
+        <!-- i: 이탤릭체(꾸밈의역할) -->
+        <li><i>에스프레소 샷</i>을 넣어주면 완성</li>
+        <!-- u:밑줄 -->
+        <li><u>완성!</u> <del>맛있게 념념 드세요!</del></li>
+    </ol>
+
+    <!-- 수평줄 태그 -->
+    <hr>
+
+    <!-- 목록태그 중첩사용 -->
+    <!-- li태그안에 ul태그 사용가능 -->
+    <h3>내가 좋아하는 음식</h3>
+    <ul>
+        <li>
+            양식
+            <ul>
+                <li>스파게티</li>
+                <li>스테이크</li>
+            </ul>
+        </li>
+        <li>
+            한식
+            <ul>
+                <li>김치찌개</li>
+                <li>돼지국밥</li>
+            </ul>
+        </li>
+        <li>
+            일식
+            <ul>
+                <li>초밥</li>
+                <li>라멘</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+    <h2>img 태그</h2>
+    <!-- alt="이미지" 이렇게 절대 쓰지말기~ 바보임 -->
+    <!-- **상대경로**: 현재 위치를 기준으로 하는 상대적인 경로 -->
+    <!-- 자신의 위치를 기준으로 하기 때문에 프로젝트의 위치가 바뀌어도 그대로 사용할수 있습니다 -->
+    <!-- 목적파일(sesac.webp)의 위치가 바뀐다면 상대경로를 수정해야하는 단점 -->
+    <!-- ex) ./src/img/img.png, ../../img.png -->
+    <img src="./sesac.webp" alt="새싹머리를한 코파는사람" width="200">
+    <img src="./sesac.webp" alt="새싹머리를한 코파는사람" width="200">
+    <!-- 이미지 비율로 맞춰서 하려면 width 또는 height 둘중하나만 -->
+    <img src="./sesac.webp" alt="새싹머리를한 코파는사람" height="300">
+    <img src="./sesac.webp" alt="새싹머리를한 코파는사람" width="200">
+    <img src="./sesac.webp" alt="새싹머리를한 코파는사람" width="200">
+
+    <!-- **절대경로**: root(맨처음, 최상단)부터 해당파일까지의 경로 -->
+    <!-- 내 로컬 환경에서는 어느 곳에서든 접근 가능하다는 것이 장점 -->
+    <!-- 다른 로컬에서는 절대 경로가 실제로 동일해야만 접근이 가능하다는 것이 단점 -->
+    <!-- ex) https://naver.com/.., c:\user\ ... -->
+    <img src="file:///C:/Users/sba/Documents/github/s-y-6/02-html/sesac.webp" alt="">
+
+    <!-- 구글 이미지 주소 복사 -->
+    <img title="구글에서가져옴" src="https://i.namu.wiki/i/BiEHbujzxK92K49SjvPYmilKzE1Y86u9f2nZXAPtZ5mQPkFZQd2XfuAlUPQeNPRGy0kaljOGOPShxWR-PfsG6Q.webp" alt="" width="150">
+    
+    <hr>
+    <br>
+    <!-- a tag target attribute: 링크가 열릴 위치 지정  -->
+    <!-- _self (default):현재 탭에서 열기 -->
+    <!-- _blank: 새 탭으로 열기 -->
+    <a href="https://www.naver.com" target="_self">네이버 바로가기</a>
+    <a href="https://www.naver.com" target="_blank">네이버 바로가기</a>
+    <a href="https://www.naver.com" target="_blank" title="네이버 바로가기">
+        <img height="50" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEUAxzz///8AxCkAxTDh9+e57MQAxjgkzE/r++/1/vgzz1oAxjUAxS4AxCj5/vvs+/HX9d9/3pXC781X1XW37MRq2YTS9Nvg+Of2/fmP4qJy24qc5a0Vy0l43I+x67/K8dSI4J1O022l6LVB0WRj2H6q6bmX5KpG02orzleL4Z9X1nUAykTH8dIAwRaFAL77AAAL5klEQVR4nNXdWWPqKhAAYBYlKsS9da9abes9tv//793ENWZlBsgyT+eh9fg1BMgEBkKdR38wHH+sRm/7g7c+E0LOa6/3cxx9f7XfO/O+8/+eOPzsfmf7OZr0hPKZUlIKIcg1gn9JyRXzmfT+bVbj1tzht3Al7IwXk5NQiss7Kz0Cqgqdu/bM0TdxIey2RydZaHt1ciW9t4+Wg29jWzh/XxwY4/q4KFP53mjctfyNrAq7442H0z2U3D+/TTs2v5RF4Xa5Vka8x6Ukx7a9r2VL2FqcGeDGK0TKzdDSN7Mi7LcnTNni3ZDcP3xZuSUtCAerE5NWeTckW+8sDCHGwsGIWL58ESOXR+PGaiicLX0LnUtOSH+/rVDY2ijuknczTt4rEgbt073vYuRHg/sRL1xJt+3zxcg2g7KFbY+V5guDy89Sha1JuT4Sjh09XJeDEn4LF+NfUUi1xEwBEMKh52wALAguEfNVuHBRegN9hvDfwD0OVDg7qMp8YfD12K3wi1dxB0ZDsJFD4fzoV+wLg/VAyQ6IcHgqZw5TFFJAOhyA8ENW3ULvIdR/LoSjCvvQRLCJdopVV9j/x6pWvQT3dG9GTWGnV+0gkQx51pzE6Qln67rcgs8QmhMcLeG2qmlabgh/ZUs4riUwCP/bjnBaj1EwLdjOhvCjrlcwDI0pXKHwow4TtezwC4lFwmndRol4FDbUAuG4vGwTNtjCRFjPYSIWBYNGrnDWBGBAnGKFnXUjgMHsJm8ClyPs9+o3VUsPQXJy4jnCf/Ud6eMh1tl5xmzhrl6PS/nB93DhtElAQlTmyJ8lHFp7KV9SsA+YcO41pZe5h+AZb4szhMfm9DL3EB5E+FXv6XZ6qKW+cNa8KxhG+q2YKjw07Sa8hjinLRdLEy7q/sSUFXyiJxw2aySMhv+lJfQaNhJGgyVfLyaF301to2HIZDtNCFuiwZcwGDISaeKEcNLMfvQewou/sokL200c66Oh4pmpuLDJ3cw1VCtXuGruSHGPeGfzKhw07ZkpLdhvjnDUzAnpa8ifbCFkpOBMK3Q+UOuDAKP064jxItzoX0L1NegUx6BFiolypvFRg3f97yZ6WcIW4O/ENBd8jItHH6616KAFuIFeUsRR4RLwIbpCjQ/lWisOIUJxShcOIIO9tnBemDi3LyR+ZPFbRAjqSLWFdPtXvlAc0oQDjU4BI6SbgtvbgZCo55uMp3AFemoCCPsFM0EXQnlMCvs90HQGIKTb/KmgCyGRj9npQ9iGzUghQrrLbR5OhM9HjIfwH+y5ECSkp7z24UQozvdd4ndhC/hQARMO8/pTJ0Li37/gXQjNIMKEdJHzB3QjfMy/78Iz8LEJKMxLMrsREtZ6ERZ0d+bCnBcFjoTq+0W4hOafoEK6ypwTOhLenzCuwuLJo7Ewu506EpLbC8WrcAzOAsOFnazlVa6EahERAh590UL6mdFOXQlv0++LcA7PISKEWctXXAlvecWL8B2eBsYIB+lpIHfC1UO4gP82RpixVtWZUO4fwgM8S4oS0kna13QmJKp/E3YR7ypwwtSnbHfCSzIjFAIfnAyEqf+VOyHf3YSYTDdSSN+S/5c74WVaEwpzn94sC7vJ/tSdkIjBRdjBvBPFCulv4qZ3KFTji/AX8+IeLUym3hwK+eIiRIyGJsLEBMqhMHyXSJBv7vFC+hvrT13eh6d5IOxjOhoTIR29tlOHwjCpSGgH9drXRBhbLOBSyMaBcItaIWQkfJ3puxSq70D4Wb7wNfXmtJUuAyHu3b2Z8CWl4VIofgIhbhGUoXAYaTguheTcJxT2RsaSkC6et6JToRqQPm4Fjakw0k6dCv0hGeAWWxoLZ4/FSU6FbEyGuKV6xsJn6s1tK/0iY9xKNnMh3csShHxBPipqpWGKuASh3BDY63ubwvu+FbfCIxnh1gTbEN5Sb06F4oe8VSi8pt6cCsmJ7CsaDy9x2eTo9hp6BJENtie87JFzew3XBPX8a004V8K5cI37RUvCcHWmW+GZnKsV0qVyK0SHpnBT+BPdtWq0cJ21//gZv3+NFvZEcY38pVY5S7zQ7X3YU2mbHl9D75wSvNBtX9oTaZseMYHvS5EbnbSFxEdXcbYkxKVpAMLr2/TKhGvH89Lw78ewdaqtCD1ydPpsEQqFtHFIDnbmfXL8fHi5B+Sh+AedCQ/kG5nDAgj1qv85Ek4c52lu/Rgzb6fYLMaSYJaagIWyV/yjboT8P4JY0wYXEgYo/GtVqD5Jp4xrGPy80SkceCGbkrn7vjSMrPo4roX+OynalWRJmFOqyqlQdQh0swxWSHyzE3GQb0jD94ebkoTJeg5lCA+UAHfl4YVEFac0rAvlWyCML+BxJiR/0IMbzIV8EQhbJbXSsICjQTtFrqdpB8IuqjPFCAl/K1vIZ+G6NlRnihIW1FK1LxReNxTuHK5NjAnFGZ3SwK1N3F/WJrYdri+N50j4sfh3LAr56CJEdTVIIfGLU8QWhWENkHCdN6arwQqDaVSJwnBHdyjEvAZGC1PqjTkTXqb7ofALcSOihdjUG0Yolzdhx92emRSh4KiTmzFCNr0JMTciXohMvaF2BQ3uQsQSUwNhUZl4a8LrTuCLUKMQkE1hOJcqQ8gXD+EcuhvfUIhppwghGz6EiPHCSFh4YoMVoTj1n0L4OR1mQuKDDzJG7Fa/Zoauwg64mRoK4ak3xG71bURIwW+gDIU6R+AYCoXXjwrBzxemwmglJzfCWyN91DaBloQ0Ft76AXdCNnwVQqsqGAuhqTeo8FGV7i6ELmg3F5K/3+LfxwvVfYL/qBMFXIVpQSjWkNQbuMbQfaXVQ/jppNZX7kqPjFL/VoT88dkPYRdWosaG8Fmtyr5QPaYUz5p7sJSbFaE46x+0Day5t3/84lM4Aw36VoSQ1BuwbuIzMRupfQma19gRkj/tFDGs9mVkUhgRggYMS0KhsToTIWSR5YLRGrR7wEW0JNRvp6AatFFV9N+QZRm2hNopYoiQRdMkL7WgARtmrQl1U8SAs29epxIvQkhF6bWnEzqfdNb6JEA+UL1kZF9rsgO6U6EV9j5JH3h/MEwVzpp/cEDiUKTY2Qjw0nS1CxFbQxcTdpt/OEJ83U78BI/GH3CRGGAT58wgV7bXJZKTpIQQV+qkNqES70SS5z1Bzg+oXcS7mVRhozsbP7mMNeVUsgYfiJS2xDPt7LyUunjNiNQcbJpw0JCznBPB05Zap57wiKyVUXWkv7NLP4d01MQhI3YKUr6QNuZI7mcImb5mLkPYwDMCs5KvWWc6I7fSVBcsfmZekZD+1yxi6iGr+cL0qsZ1jZy3PNnCJh3NLVT2yodsIW3BV9lUFSrnVWSOkG6bMgfPXe6YJ2zKHNzP6kaLhTnHbtQoVP4eh3wh/a7/mKEK3nwUCOmu7kQ1KVi1UiSko3o3VPVTtCynUEhHdb6KKv15Aiasc0MtbKJ6wmg11XoFO2qsHNMRBoNGLYd+X2srnJaQTus4u8l8XsII6ZbUbRoulObOFE0hna3r9TAl8ibbKCHt7uuUneJr7Q0N2sJwYKzNzcgm+svFAEL6UZP+RuQ/TBgI6dCrw80oJahmI0hI6bL6lsp+YHuJgUL6ca72MgoO3W4DFdLOpMo5nDqB69yAheGW06pG/6CLgW1hQArp4KiquBuF6mEKFWGElLa98od/LjAbM7FCOt+V3FSFf0Ruc0cKKW1NWHlGwXroCkVoIaW/PyXdjkKdsJUYzITB7dgr4dFYsPUnvAe1JAwejU+OjYKRlVF9KVMhpeODwz5HKs+4SK+xMHj+P0o3NyRXe3zFHpvCoF/dnX3bF1IouTStRHgJK0JK++09s3ghBfdPn/oPublhSRhEa3XgVpCCq9MOvJs9M+wJgxguDsqw3xGcnUZbk9EhHlaFNLySe+VnnRNfpJOM9RZDmzxqXxhEfzzqCcVBSR0huZLecmqnuvlLOBCGMRgvJifJlCxcWyUCHOPeftRGFeYpDkfCMOat8ffy56x8FlxQGd/1EsqU8hU5vC2mM0v9Zlo4FF6jPxi2vxaj40/PW6+vBzGcz2vvdJhsFp/T947luy4Z/wO+DL4iULuttQAAAABJRU5ErkJggg==" alt="네이버">
+    </a>
+    
+    <hr>
+    <!-- a태그의 href속성 값으로는 인터넷상의 주소뿐만 아니라 프로젝트 폴더 내의 다른  html문서의 주소를 넣어도된다. -->
+
+    <a href="./01_html-start.html">html시작하기 공부내용보기</a>
+
+
+</body>
+</html>
