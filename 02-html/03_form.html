@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form과 요소</title>
+</head>
+<body>
+    <h1>폼 관련 태그를 알아보자!</h1>
+
+    <!-- form 태그: 사용자로부터 입력받는 요소들을 감싸는 태그 -->
+    <!-- action 속성: 사용자가 폼에 입력한 값을 전달할 주소 -->
+    <!-- method 속성: 사용자가 폼에 입력한 값을 전달할 방법-->
+    <!-- 위 두가지 속성은 "서버" 연관된 내용-> 백엔드 진도 나갈 때 다시 소개 -->
+    <!-- form 태그는 화면에 드러나지 않는 추상적인 태그(양식) ->영역으로만 존재함 -->
+    <form action="" method="">
+        <!-- form 요소: 폼 태그 안에 있는 사용자의 입력값을 받는 요소 -->
+        <!-- input, textarea, select... 태그들에는 name 속성을 가질 수 있다. "서버"와 연관-->
+        <!--  input태그 -->
+
+        <!-- text -->
+        text <input type="text">
+        <!-- disabled 속성: 편집을 불가능하도록 막음 -->
+        <!-- disabled 개발자 도구에서 수정 가능하기때문에 프론트, 백엔드 둘다 신경써야함 -->
+        text <input type="text" disabled>
+        
+        <br>
+        
+        <!-- label : 클릭하면 input창에 커서가 깜박임 -->
+        <!-- label 태그의 for속성 값과 input 태그의 id속성값을 일치시키면, label 글씨를 클릭했을 때 input 창에 포커싱 
+            -> 웹 접근성에 적합(사용자가 편리하게 사용할수 있기 때문) -->
+        <!-- placeholder 속성: 미리보기 텍스트 (안내문구) -->
+        <label for="user-email">이메일</label>
+        <input type="email" name="" id="user-email" placeholder="abc@test.com">
+
+        <br>
+
+        <input type="color"><br>
+        <input type="range"><br>
+        <input type="file"><br>
+        <input type="number" name="" id=""><br>
+        <input type="date" name="" id=""><br>
+        <input type="datetime-local" name="" id=""><br>
+        <input type="password" name="" id=""><br>
+
+        <!-- radio input, checkbox input -->
+        <!-- ! radio, checkbox input : 같은 name 속성값을 부여해서 "카테고리"화 해줘야 함 -->
+        <!-- ! 프론트엔드에서 name,value 속성 중요 -->
+        <!-- checked 속성: 해당 옵션이 기본으로 체크되어 있도록 해줌 -->
+        <h5>당신의 취미는 무엇인가요?</h5>
+        <input type="checkbox" name="interest" value="basketball" checked>농구
+        <input type="checkbox" name="interest" value="movie">영화
+        <input type="checkbox" name="interest" value="lay-down">누워있기
+
+        <h5>당신의 성별은 무엇인가요?</h5>
+        <input type="radio" id="female" name="gender" value="female"><label for="female">여자</label>
+        <input type="radio" id="male" name="gender" value="male"><label for="male">남자</label>
+
+        <h5>당신은 무슨 개발자인가요?</h5>
+        <input type="radio" value="f" id="web" checked /><label for="web">웹 개발자</label>
+        <input type="radio" value="m" id="app" /><label for="app">앱 개발자</label>
+        <br>
+        <!-- textarea 태그: input 보다 더 많은 양의 내용(여러줄)을 입력 받을 수 있는 요소. 
+            유저가 마우스 커서를 이용해 우측 하단을 조절하면 크기 변경 가능
+        -->
+        <!-- cols: 가로길이, rows: 세로길이 -->
+        <textarea name="" id="" placeholder="문의사항을 입력해주세요." cols="30" rows="10"></textarea>
+
+        <br>
+
+        <!-- select 태그: 옵션 메뉴를 제공하는 드롭다운 리스트 -->
+        <select name="flowers" id="">
+            <option value="" disabled selected>선택하세요</option>
+            <optgroup label="red-flowers">
+                <option value="장미">장미</option>
+                <option value="동백꽃">동백꽃</option>
+                <option value="카네이션">카네이션</option>
+            </optgroup>
+            <optgroup label="white-flower">
+                <option value="벚꽃">벚꽃</option>
+                <option value="목련">목련</option>
+                <option value="매화">매화</option>
+            </optgroup>
+        </select>
+
+        <br>
+        <br>
+
+        <!-- 버튼 -->
+        <!-- 1. input태그의 type속성을 이용해 버튼 만들기 -->
+        <!-- 2. button 태그-->
+
+        <!-- 단순버튼 : 클릭 가능한 버튼 -->
+        <input type="button" value="단순버튼1">
+        <button type="button">단순버튼2</button>
+        <br>
+        <br>
+
+        <!-- 제출버튼 : "폼"을 제출하는 버튼 -->
+        <input type="submit" value="제출버튼1">
+        <button type="submit">제출버튼2</button>
+
+        <!-- 참고. type 속성을 생략한 button 태그 -->
+        <!-- button type: 폼태그 바깥에 button 태그가 있을때 기본 값 -->
+        <!-- submit type: 폼태그 내부에 button 태그가 있을때 기본 값 -->
+
+    </form>
+</body>
+</html>
