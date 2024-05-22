@@ -1,0 +1,44 @@
+/* 1. * : 전체 선택자 */
+* {
+    color: red;
+}
+
+/* 2. 태그선택자 */
+h1 {
+    background-color: pink;
+}
+p{
+    background-color: blueviolet;
+}
+
+/* 3. .클래스명 : 클래스선택자 */
+.second{
+    background-color: aqua;
+}
+
+.small{
+    font-size: 10px;
+}
+.big{
+    font-size: 30px;
+}
+
+/* 4. #아이디명 : 아이디 선택자 */
+#first{
+    background-color: lightgreen;
+}
+
+/* 
+    클래스 선택자와 아이디 선택자의 차이점
+    - class : 그룹
+    - id : 고유
+
+    올바른 사용법
+    1. 한 요소에 여러 클래스 사용 가능, 공백으로 구분
+    <li class="small dog">강아지</li>
+    2. 한 요소에 하나의 아이디만 사용
+    ->한 요소에 여러개의 아이디는 사용할수 없다.
+    <li id="first">1</li>
+    3. 한 요소가 여러 클래스의 하나의 아이디를 사용 가능
+    <li id="five" class="number">5</li>
+ */
