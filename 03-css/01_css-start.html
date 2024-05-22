@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 참조방식</title>
+    <!-- 내장방식 -->
+    <style>
+        ul {
+            background: pink;
+        }
+        /* 우선적용순서: 인라인>내장방식 */
+        h1, h2{
+            color: red;
+        }
+    </style>
+    <!-- 링크방식 -->
+    <link rel="stylesheet" href="01_css-start.html">
+</head>
+<body>
+    <!-- 인라인방식: style 속성에 전부 스타일을 직접 적어줘야 함. 재사용 x -->
+    <h1 style="color: blue;">css 사용법</h1>
+    <h2 style="font-size: 50px;">css 사용법2</h1>
+
+    <!-- ul>li*3 -->
+    <ul>
+        <li>원</li>
+        <li>투</li>
+        <li>쓰리</li>
+    </ul>
+
+</body>
+</html>
