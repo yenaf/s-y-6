@@ -1,0 +1,63 @@
+.div1{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+/* 사용자 행동에 따른 가상클래스 선택자 */
+/* :hover : 요소에 마우스를 올렸을 때 */
+.div1:hover{
+    background-color: hotpink;
+    width: 150px;
+    height: 150px;
+}
+
+/* :active : 요소를 마우스로 클릭하고 있을 때 */
+.div1:active{
+    background-color: brown;
+    width: 200px;
+}
+
+/* :focus : 요소에 포커스가 됐을 때 */
+input:focus{
+    background-color: violet;
+    color: lightblue;
+    outline-color: green;
+}
+
+.links>a:hover{
+    background-color: coral;
+    
+}
+
+/* :visited : 방문했던 사이트 */
+.links>a:visited{
+    color: orange;
+}
+
+/* 요소 상황에 따른 가상클래스 선택자 */
+.zoo>*{
+    background-color: green;
+    color: #fff;
+}
+
+/*  */
+.zoo>:first-child{
+    background-color: red;
+}
+
+.zoo>li:last-child{
+    background-color: blue;
+}
+
+.zoo>div:nth-child(2){
+    background-color: pink;
+}
+
+.zoo>li:nth-child(3){
+    background-color: black;
+}
+
+.zoo>:not(div){
+    background-color: yellow;
+}
