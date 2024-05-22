@@ -1,0 +1,14 @@
+/* disabled 속성을 가진 */
+[disabled]{
+    background-color: red;
+}
+
+/* placeholder 속성값이 이름인 */
+[placeholder="이름"]{
+    background-color: orange;
+}
+
+/* 인풋태그의 placeholder속성을 제외한 나머지 */
+input:not([placeholder]){
+    background-color: blue;
+}
