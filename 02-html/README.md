@@ -57,6 +57,7 @@
 
 ---
 
+
 ### 3. 기본문법
 - 태그는 소문자로 작성한다
 - 기본적으로 `<tag></tag>` 닫힌태그로 마무리한다
@@ -124,6 +125,7 @@
 ### 5. 사용자 입력 태그
 
 - #### `<form>` 태그: 사용자로부터 입력받는 요소들을 감싸는 태그
+  - 회원가입, 설문조사, 로그인, 검색 등
   - 화면에 드러나지 않는 추상적인 태그(양식) ->영역으로만 존재함
   - action 속성: 사용자가 폼에 입력한 값을 전달할 주소
   - method 속성: 사용자가 폼에 입력한 값을 전달할 방법
@@ -131,22 +133,38 @@
 - #### `<input>` 
   - [input MDN문서](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)
   - 속성
-    - type
-    - value
-    - placeholder
-    - repuired
-    - title
+    - type : 입력값의 종류
+    - value : 보이는 입력 값
+    - placeholder : 미리보기 텍스트(안내문구)
+    - repuired : 값이 없는 상태에서 넘기면 입력란에 작성하세요라고 나옴
+    - title : 리더기가 읽어줌
     - autocomplete
 
   - type 속성 값의 종류
-
-
+    - text : 한줄짜리 텍스트를 입력할 수 있는 텍스트 상자
+    - search : 검색(text랑 다른점 글쓰면 끝에 엑스표지우는표시 나타남)
+    - tel : 전화번호 입력
+    - url : url주소
+    - email : 이메일
+    - password : 비밀번호(사용자 입력시 안보이게 된다)
+    - date : 사용자지역 기준으로 년, 월, 일
+    - range : 숫자를 조절할 수 있는 슬라이드 막대
+    - color : 색상표
+    - checkbox : 주어진 항목에서 2개이상 선택 가능한 체크박스
+    - radio : 주어진 항목에서 1개만 선택할 수 있는 라디오 버튼
+    - file : 파일 첨부
+    - button : 버튼
+    - summit : 제출(서버전송버튼)
+    - image : 이미지
+    - reset : 초기화 버튼
 
 ### 6. 테이블 태그
-- #### `<table>`
-- #### `<tr>`
-- #### `<th>`
-- #### `<td>`
+- #### `<table>` : 표, 게시판 등
+  - 
+- #### `<tr>` : table row 줄(행)
+- #### `<th>` : table header cell 제목칸(제목셀)
+- #### `<td>` : table data cell 내용칸(데이터셀)
+- #### `<caption>` : table 맨처음 시작은 반드시 들어간다. 스크린리더가 읽어준다(제목/설명)
 
 ### 7. 시맨틱 태그
 
