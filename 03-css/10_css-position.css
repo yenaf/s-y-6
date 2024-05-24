@@ -1,0 +1,59 @@
+body{
+
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    text-align: center;
+    font-weight: 500;
+}
+
+/*
+    static 기본값
+    - 기본값이기 때문에 작성하지 않더라도 적용
+    - inline 요소 : 왼->오른쪽으로 쌓임
+    - block요소 : 위->아래로 쌓임
+*/
+.p-static{
+    background-color: pink;
+}
+
+/* 
+    relative : 상대위치
+    - 일반적인 프름에 따라 배치, top/bottom/left/right 중 하나이상 작성
+    - 원래있어야 하는 위치 기준으로 부터 이동한다
+    - 위치가 바뀌어도 원래 기존 자리가 유지된다
+    - 보통 부모 요소로 많이 사용한다
+*/
+.p-ralative{
+    background-color: skyblue;
+    position: relative;
+    left: 100px;
+}
+
+
+/* 
+    absolute : 절대위치
+    - position 속성을 갖는 제일 가까운 조상을 기준 (static은 기준을 삼을수없음)
+    -> position 속성을 갖는 조상이 없다면 body기준
+    - 특정 요소를 기준삼아서 top/bottom/left/right
+    - 배치가 바뀌면 기존 자리가 없어진다
+*/
+.p-absolute{
+    background-color: yellow;
+    position: absolute;
+    left: 100px;
+}
+
+/* 
+    fixed : 고정위치
+    - viewport(브라우저의 화면 전체)를 기준으로 특정위치
+    - 스크롤이 되어도 움직이지 않음
+    - header, footer에 많이 사용
+*/
+.p-fixed{
+    background-color: red;
+    position: fixed;
+}
