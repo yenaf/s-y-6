@@ -1,0 +1,22 @@
+/* .boderI{
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-image: url(./img/cat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: 4px solid pink;
+} */
+
+.backgroundC{
+    width: 300px;
+    height: 300px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: linear-gradient(230deg,orange,pink,red);
+}
+
+/* .backgroundI{
+    
+} */
