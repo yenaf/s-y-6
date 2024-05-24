@@ -1,0 +1,32 @@
+.d-inline1{
+  display: inline;
+  background-color: lightblue;
+}
+
+.d-inline2{
+  display: inline;
+  background-color: lightpink;
+}
+
+.d-block1{
+  display: block;
+  background-color: lightblue;
+}
+.d-block2{
+  display: block;
+  background-color: lightpink;
+}
+
+.d-inline-block1{
+  display: inline-block;
+  background-color: blue;
+  padding: 50px;
+}
+.d-inline-block2{
+  display: inline-block;
+  background-color: red;
+  width: 300px;
+  height: 300px;
+  margin: 20px 40px;
+  
+}
