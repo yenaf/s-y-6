@@ -1,0 +1,103 @@
+/* .container{
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+    position: relative;
+}
+
+.item{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+}
+
+.item1{
+    position: relative;
+    left: 50px;
+    top: 30px;
+}
+.item2{
+    position: absolute;
+    right: 30px;
+    bottom: 100px;
+}
+.item3{
+    position: fixed;
+    right: 100px;
+    top: 100px;
+} */
+
+
+/* 애벌레 */
+
+.container{
+    width: 500px;
+    height: 500px;
+    background: url(./img/bg.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+.eye{
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 50%;
+    position: relative;
+    top: 140px;
+    left: 130px;
+    z-index: 100;
+
+}
+
+.in{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    background: #000;
+}
+
+.item1{
+    background-color: #03045e;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+}
+.item2{
+    background-color:#0077b6;
+    position: absolute;
+    top: 160px;
+    left: 160px;
+}
+.item3{
+    background-color:#00b4d8;
+    position: absolute;
+    top: 190px;
+    left: 190px;
+}
+.item4{
+    background-color:#90e0ef;
+    position: absolute;
+    top: 250px;
+    left: 240px;
+}
+.item5{
+    background-color:#caf0f8;
+    position: absolute;
+    top: 290px;
+    left: 310px;
+}
+
+
+
