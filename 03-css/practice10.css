@@ -1,0 +1,66 @@
+/* 실습1 */
+/* div{
+  width: 200px;
+  height: 100px;
+  background-color: black;
+  color: white;
+  overflow-y: scroll;
+}
+
+div:hover{
+  width: 300px;
+  height: 300px;
+  transition: 1s;
+  transition-delay: 0.5s;
+} */
+
+/* 실습2 */
+/* div{
+  position: relative;
+}
+img{
+  width: 300px;
+  height: 200px;
+  transform: rotateY(20deg);
+  transform: skewY(20deg);
+}
+.img1{
+  position: absolute;
+  top: 150px;
+  left: 30%;
+}
+.img2{
+  position: absolute;
+  top: 150px;
+  left: 20%;
+}
+.img3{
+  position: absolute;
+  top: 150px;
+  left: 10%;
+}
+
+
+img:hover{
+  transform: rotate(0deg);
+  transform: skewY(0deg);
+  transition: transform 0.5s;
+  z-index: 10;
+} */
+
+/* 실습3 */
+div{
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  border: 1px solid blueviolet;
+}
+
+.box1:hover{
+  width: 500px;
+  transition: all 1s;
+}
+
+.box2:hover{
+  transform: skewX(-50deg);
+}

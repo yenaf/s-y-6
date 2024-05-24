@@ -1,0 +1,64 @@
+.cat{
+  background-color: red;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  /* overflow: hidden; */
+
+}
+
+img{
+  /* 
+    크기단위로 %를 사용
+    : 부모 요소의 n% 차지
+  */
+
+  width: 100%;
+
+}
+
+/* 
+  transform 속성
+  요소의 모양, 크기, 위치 등을 변경하는데 사용
+*/
+
+img:hover{
+
+  /* 
+    skew()
+    원하는 각도 만큼 객체를 기울임
+    x,y축 나누어 속성 부여 가능
+  */
+
+  /* transform: skewX(30deg); */
+  /* transform: skewY(30deg); */
+
+  /* 
+    scale() 
+    - 크기조절(확대, 축소)
+    - 1보다 큼 : 확대
+    - 0~1 : 축소
+  */
+  /* transform: scale(0.5); */
+
+  /* 
+    rocate()
+    - 회전
+    - 주어진 각도만큼 회전
+  */
+  /* transform: rotate(45deg); */
+
+  /* 
+    translate()
+    - 이동
+  */
+  /* transform: translate(100px,100px); */
+
+  /*  
+    transition
+    - css요소의 속성값이 변화 할때 일정 시간동안 부드럽게 변화되도록 설정
+  */
+
+  transform: scale(1.5);
+  transition: transform 1s;
+}
