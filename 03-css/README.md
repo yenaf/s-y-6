@@ -107,6 +107,7 @@
 ![margin과 padding](img/box-model.png)
 - margin
 - padding
+
 ---
 
 ### 8. CSS 박스모델
@@ -136,5 +137,54 @@
 
 ---
 
-### 9.
+### 9. position
+> 요소의 위치를 지정하는 css
+
+- static : 정적 위치 지정 방식(기본값)  
+
+- relative : 상대 위치 지정 방식
+  - 일반적인 프름에 따라 배치, top/bottom/left/right 중 하나이상 작성
+  - 원래있어야 하는 위치 기준으로 부터 이동한다
+  - 위치가 바뀌어도 원래 기존 자리가 유지된다
+  - 보통 부모 요소로 많이 사용한다
+
+- absolute : 절대 위치 지정 방식
+  - position 속성을 갖는 제일 가까운 조상을 기준 (static은 기준을 삼을수없음)
+  - position 속성을 갖는 조상이 없다면 body기준
+  - 특정 요소를 기준삼아서 top/bottom/left/right
+  - 배치가 바뀌면 기존 자리가 없어진다
+
+- fixed : 고정 위치 지정 방식
+  - viewport(브라우저의 화면 전체)를 기준으로 특정위치
+  - 스크롤이 되어도 움직이지 않음
+  - header, footer에 많이 사용
+
+-z-index
+  - 겹치는 요소에 대한 순서를 결정
+  - 숫자값 : 양수, 0. 음수 가능
+  - 숫자값이 클수록 더 위에 쌓임(가장 앞에 놓인다
+
+---
+
+### 10. transform
+- skew : 기울기
+- scale : 확대
+- rotate : 회전
+- translate : 이동
+
+
+### 11. transition
+- transition-property 
+- transition-duration 
+- transition-timing-function 
+- transition-delay
+- 단축
+  - transition: 속성명 지속시간 타이밍함수 대기시간;
+
+### 12. display
+- inline / block
+- inline-block
+- flex
+- grid
+
 
