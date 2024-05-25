@@ -178,13 +178,35 @@
 ---
 
 ### 11. transform
+> 요소의 모양, 크기, 위치 등을 변경하는데 사용
+
 - skew : 기울기
+  - 원하는 각도 만큼 객체를 기울임
+  - x,y축 나누어 속성 부여 가능
+  - skewX(x_deg)
+  - skewY(y_deg)
+  - skew(x_deg, y_deg)
+
 - scale : 확대
+  - 크기조절(확대, 축소)
+  - 1보다 큼 : 확대
+  - 0~1 : 축소
+
 - rotate : 회전
+  - 회전
+  - 주어진 각도만큼 회전
+  - rotateX() : x 축을 기준으로 회전.
+  - rotateY() : y 축을 기준으로 회전.
+  - rotate() : 시계방향으로 회전 (deg > 0)
+
 - translate : 이동
+  - translateX() : x축을 기준으로 이동.
+  - translateY() : y축을 기준으로 이동.
+  - translate() : x, y축을 기준으로 이동.
 
 
 ### 12. transition
+> css요소의 속성값이 변화 할때 일정 시간동안 부드럽게 변화되도록 설정
 - transition-property 
 - transition-duration 
 - transition-timing-function 
