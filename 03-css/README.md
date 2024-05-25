@@ -166,14 +166,25 @@
 
 ---
 
-### 10. transform
+### 10. overflow
+> 컨텐츠가 너무 크거나 길어서 크기보다 넘치게 될 때 사용하는 속성
+- overflow-x : 수평방향으로 넘칠때 처리
+- overflow-y : 수직방향으로 넘칠때 처리
+- visivle(기본값) : 벗어난 부분을 표시한다
+- hidden : 벗어난 부분을 숨긴다
+- scroll : 스크롤 생성
+- auto : 넘친다면 스크롤, 안넘치면 스크롤x
+
+---
+
+### 11. transform
 - skew : 기울기
 - scale : 확대
 - rotate : 회전
 - translate : 이동
 
 
-### 11. transition
+### 12. transition
 - transition-property 
 - transition-duration 
 - transition-timing-function 
@@ -181,7 +192,7 @@
 - 단축
   - transition: 속성명 지속시간 타이밍함수 대기시간;
 
-### 12. display
+### 13. display
 - inline / block
 - inline-block
 - flex
