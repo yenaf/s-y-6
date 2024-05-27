@@ -219,6 +219,12 @@
 - block
 - inline-block
 - flex
+  - [플렉스 개구리 게임](https://flexboxfroggy.com/#ko)
 - grid
+
+### 14. hide 속성 3형제
+
+### 15. animation
+- [animation-timing-function 값 만들기](https://cubic-bezier.com/#.24,1.21,.72,1.37)
 
 
