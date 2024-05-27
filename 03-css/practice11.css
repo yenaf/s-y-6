@@ -1,0 +1,61 @@
+body{
+  /* background-color: aqua; */
+  /* margin: 0; */
+  /* padding: 0; */
+}
+.ball1{
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(30deg, orange, yellow);
+  border-radius: 50%;
+  animation-name: move-ball;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes move-ball{
+  0%{
+    transform: translate(0%);
+  }
+
+  25%{
+    /* transform: translateX(100%); */
+    transform: translate(calc(100vw - 100px),0);
+    
+  }
+
+  50%{
+    /* transform: translateX(100%) translateY(100%); */
+    transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+  }
+
+  75%{
+    /* transform: translateX(0%) translateY(100%); */
+    transform: translate(0,calc(100vh - 100px));
+  }
+
+  100%{
+    transform: translate(0%);
+  }
+}
+
+
+.move-txt{
+  animation: move-txt 1s ease-in-out ;
+  width: 100%;
+}
+
+@keyframes move-txt{
+  0%{
+    transform: translateX(100%);
+    width: 300%;
+  }
+  100% {
+    transform: translateX(0px);
+    width: 100%;
+  }
+
+}
+
