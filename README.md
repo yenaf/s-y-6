@@ -4,3 +4,4 @@
 1. [CLI](./01-cli/README.md)
 2. [HTML](./02-html/README.md)
 3. [CSS](./03-css/README.md)
+4. [JavaScript](./04-javascript/README.md)
