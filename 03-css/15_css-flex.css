@@ -115,3 +115,36 @@
   background-color: blue;
   font-size: 30px;
 }
+
+.container1{
+  width: 500px;
+  height: 500px;
+  background-color: aquamarine;
+  position: relative;
+}
+.box-p{
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.container2{
+  width: 500px;
+  height: 500px;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* 두줄일때 */
+  /* align-content: center; */
+
+}
+.box-f{
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}
