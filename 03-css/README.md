@@ -162,7 +162,7 @@
 -z-index
   - 겹치는 요소에 대한 순서를 결정
   - 숫자값 : 양수, 0. 음수 가능
-  - 숫자값이 클수록 더 위에 쌓임(가장 앞에 놓인다
+  - 숫자값이 클수록 더 위에 쌓임(가장 앞에 놓인다)
 
 ---
 
@@ -215,7 +215,8 @@
   - transition: 속성명 지속시간 타이밍함수 대기시간;
 
 ### 13. display
-- inline / block
+- inline
+- block
 - inline-block
 - flex
 - grid
