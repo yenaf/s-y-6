@@ -1,0 +1,41 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+header{
+  height: 100px;
+  margin: auto;
+  background-color: gray;
+  padding: 0 30px 0 30px;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.header1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu{
+  display: flex;
+  gap: 20px;
+}
+.menu2{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  line-height: 100px;
+}
+.header3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
