@@ -1,0 +1,188 @@
+body {
+  background-image: url('./img/bg0.jpg');
+  background-attachment: fixed;
+}
+
+h1{
+  font-size: 35px;
+  text-align: center;
+}
+
+.container {
+}
+
+.container .heroes {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.container .heroes .hero {
+  transition: transform 0.3s;
+}
+
+.container .heroes .hero:hover {
+  transform: scale(1.2);
+}
+
+.container .heroes .hero .image {
+  width: 110px;
+  height: 130px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  border: 3px solid white;
+  transform: skewX(-10deg);
+}
+
+.container .logo {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0 auto;
+  border: 4px solid pink;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.container .logo img {
+  width: 100%;
+}
+
+.container .logo:hover{
+  transform: scale(1.1);
+}
+
+
+
+
+.container .heroes .hero:nth-child(1) .image {
+  background-image: url('./img/cat.jpg');
+}
+
+.container .heroes .hero:nth-child(2) .image {
+  background-image: url('./img/cat0.jpg');
+}
+
+.container .heroes .hero:nth-child(3) .image {
+  background-image: url('./img/cat1.jpg');
+}
+
+.container .heroes .hero:nth-child(4) .image {
+  background-image: url('./img/cat2.jpg');
+}
+
+.container .heroes .hero:nth-child(5) .image {
+  background-image: url('./img/cat3.jpg');
+}
+
+.container .heroes .hero:nth-child(6) .image {
+  background-image: url('./img/cat4.jpg');
+}
+
+.container .heroes .hero:nth-child(7) .image {
+  background-image: url('./img/cat5.jpg');
+}
+
+.container .heroes .hero:nth-child(8) .image {
+  background-image: url('./img/cat6.jpg');
+}
+
+.container .heroes .hero:nth-child(9) .image {
+  background-image: url('./img/cat7.jpg');
+}
+
+.container .heroes .hero:nth-child(10) .image {
+  background-image: url('./img/cat8.jpg');
+}
+
+.container .heroes .hero:nth-child(11) .image {
+  background-image: url('./img/cat9.jpg');
+}
+
+.container .heroes .hero:nth-child(12) .image {
+  background-image: url('./img/cat10.jpg');
+}
+
+.container .heroes .hero:nth-child(13) .image {
+  background-image: url('./img/cat11.jpg');
+}
+
+.container .heroes .hero:nth-child(14) .image {
+  background-image: url('./img/cat12.jpg');
+}
+
+.container .heroes .hero:nth-child(15) .image {
+  background-image: url('./img/cat13.jpg');
+}
+
+.container .heroes .hero:nth-child(16) .image {
+  background-image: url('./img/cat14.jpg');
+}
+
+.container .heroes .hero:nth-child(17) .image {
+  background-image: url('./img/cat15.jpg');
+}
+
+.container .heroes .hero:nth-child(18) .image {
+  background-image: url('./img/cat16.jpg');
+}
+
+.container .heroes .hero:nth-child(19) .image {
+  background-image: url('./img/cat17.jpg');
+}
+
+.container .heroes .hero:nth-child(20) .image {
+  background-image: url('./img/cat18.jpg');
+}
+
+.container .heroes .hero:nth-child(21) .image {
+  background-image: url('./img/cat19.jpg');
+}
+
+.container .heroes .hero:nth-child(22) .image {
+  background-image: url('./img/cat20.jpg');
+}
+
+.container .heroes .hero:nth-child(23) .image {
+  background-image: url('./img/cat21.jpg');
+}
+
+.container .heroes .hero:nth-child(24) .image {
+  background-image: url('./img/cat22.jpg');
+}
+
+.container .heroes .hero:nth-child(25) .image {
+  background-image: url('./img/cat9.jpg');
+}
+
+.container .heroes .hero:nth-child(26) .image {
+  background-image: url('./img/cat18.jpg');
+}
+
+.container .heroes .hero:nth-child(27) .image {
+  background-image: url('./img/cat5.jpg');
+}
+
+.container .heroes .hero:nth-child(28) .image {
+  background-image: url('./img/cat3.jpg');
+}
+
+.container .heroes .hero:nth-child(29) .image {
+  background-image: url('./img/cat2.jpg');
+}
+
+.container .heroes .hero:nth-child(30) .image {
+  background-image: url('./img/cat.jpg');
+}
+
+.container .heroes .hero:nth-child(31) .image {
+  background-image: url('./img/cat15.jpg');
+}
+
+.container .heroes .hero:nth-child(32) .image {
+  background-image: url('./img/cat11.jpg');
+}
