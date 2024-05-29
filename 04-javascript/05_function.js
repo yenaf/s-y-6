@@ -59,7 +59,7 @@ helloWorld3();
 console.log(helloWorld4());
 
 //매개변수가 있는 함수
-//매개변수가 한개일때
+//매개변수가 1개일때
 function food(text) {
   return text
 }
@@ -74,3 +74,60 @@ console.log(food(pizza));
 const colaPrice = 2000;
 console.log(typeof food(colaPrice));//매개변수는 어떤 데이터 타입이든 상관없다
 
+// 매개변수 2개일때
+function music(name,title) {
+  return `${name} - ${title}`
+}
+console.log(music('아이유','잔소리'));
+console.log(music('데이식스','예뻤어'));
+
+function music2(name,title) {
+  console.log(`${name} - ${title}`);
+}
+music2('방탄','불타오르네');
+
+// 3. 화살표함수
+//함수 표현식의 축약형 -> 간결하게 정의
+//단일 표현식의 경우에는 중괄호와 리턴 키워드 생략가능
+// 코드가 길어진다면(여러줄) 중괄호와 리턴 키워드 명시
+
+//일반형 한줄
+function square(x) {
+  return x*x;
+}
+//화살표
+const square2 = (x) => x*x;
+console.log(square2(3));
+
+//일반형 여러줄
+function triangle(base,height) {
+  const area = (base*height)/2;
+  return area;
+}
+
+const triangle2 = (base,height) =>{
+  const area = (base*height)/2;
+  return area;
+}
+console.log(triangle2(3,4));
+
+
+// 호이스팅(hoisting) -> 함수, 변수
+// - JS에서 변수 및 함수 선언이 해당 범위의 맨 위로 끌어올려지는 현상
+// - "함수 선언문"이 호이스팅!
+
+sayHello(); // 함수 "호출"을 "정의" 보다 먼저 했죠?
+function sayHello() {
+    console.log("hello~");
+}
+
+// -- 정상 출력.
+
+// 함수 표현식
+// - 호이스팅의 대상이 될 수 없음.
+// - Why?
+// - 변수에 함수가 할당되기 때문에 그 이후에만 호출 가능!.
+// sayHello2(); // ReferenceError
+const sayHello2 = () => {
+    console.log("hello2");
+}
