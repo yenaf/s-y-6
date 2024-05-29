@@ -105,3 +105,48 @@ const nums=[
 
 // Q3) 3차원 배열에서 숫자 8 출력
 console.log(nums[1][0][1]);
+
+/*
+  객체 (object) (key:value)
+  프로그래밍에서 실제 존재하는 개체나 개념을 표현하는 데이터 구조
+  속성과 메서드로 구성
+  속성 : 키(key)와 값(value)의 쌍으로 이루어져 있다 - 상태나 특징
+  메서드 : 함수(function)를 값으로 가진다 - 동작이나 행위
+*/
+const cat={
+  name:'장화',
+  age:10,
+  inCute:true,
+  mew: function () {
+    return '냐옹';
+  }
+}
+console.log(cat);
+
+// 객체(object)의 속성(key)에 접근하는 방법
+// 1. 점 표기법 (.)
+console.log(cat.name);
+console.log(cat.age);
+console.log(cat.mew);
+console.log(cat.mew());//함수안에 리턴값만 가져옴
+
+// 2. 대괄호 표기법 ([])
+console.log(cat['name']);
+console.log(cat['age']);
+
+// 3. key가 변수에 저장되어 있을때 사용법
+const temVal='name';
+console.log(cat[temVal]);// cat['name'] = cat.name
+
+//객체 변수 선언 실습
+const a={
+  name : '이몽룡',
+  age : 18,
+  like : ['강아지','고양이'],
+  isMarried : true,
+  girlfreind:{
+    name: '성춘향',
+    age: 16
+  }
+}
+console.log(a);
