@@ -71,11 +71,11 @@ if(age>=20){
 // 현재 시간을 받아오는 코드 0~23
 // 삼항연산자
 let now = new Date().getHours();
-// console.log(now);
+now > 0 && now < 12 ? console.log(`지금은 오전입니다.`) : console.log(`지금은 오후입니다.`);
 
+// if문
 // if(now<12 && now>=0 ){
 //   console.log(`지금은 오전입니다.`);
-
 // }else{
 //   console.log(`지금은 오후입니다.`);
 // }
