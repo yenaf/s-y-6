@@ -70,12 +70,11 @@ if(age>=20){
 // * 조건문
 // 현재 시간을 받아오는 코드 0~23
 // 삼항연산자
-let now = new Date().getHours();
-now > 0 && now < 12 ? console.log(`지금은 오전입니다.`) : console.log(`지금은 오후입니다.`);
+// let now = new Date().getHours();
+// now < 12 ? console.log(`지금은 오전입니다.`) : console.log(`지금은 오후입니다.`);
 
-// if문
-// if(now<12 && now>=0 ){
-//   console.log(`지금은 오전입니다.`);
-// }else{
-//   console.log(`지금은 오후입니다.`);
-// }
+let now= new Date();
+let hours = new Date().getHours();
+console.log(hours);
+ const amOrPm = hours < 12 ?'오전':'오후';
+ console.log(`현재 시각은 ${amOrPm} ${hours%12 || 12}시 입니다`);

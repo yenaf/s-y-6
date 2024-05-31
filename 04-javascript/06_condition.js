@@ -1,9 +1,9 @@
 // 조건문
 
 // if문
-if(5>3){
-  console.log('집에 가고싶습니다.');
-}
+// if(5>3){
+//   console.log('집에 가고싶습니다.');
+// }
 
 // prompt()로 사용자로부터 값을 입력받고(문자열)
 // 숫자형 형변환
@@ -71,9 +71,96 @@ function loginUser() {
         return "아이디 틀림! 로그인 실패";
     }
 }
-const result = loginUser();
+// const result = loginUser();
 // -> loginUser 함수의 리턴값(반환값)을 result 변수에 저장
-console.log(result);
+// console.log(result);
 
 
 
+// * switch문
+// 하나 이상의 case 문으로 구성
+// default가 필수는 아니지만, 사용하길 권장 = if문의 else같은 존재.
+// switch 문 내의 모든 case가 매칭 되지 않을 때 실행
+// break : 조건을 빠져 나갈때 사용하는 키워드
+
+// let a=1;
+// switch (a) {
+//     case 1:
+//     case 2:
+//     case 3:
+//         console.log('a가 1~3이군요!');
+//         break;
+//     case 4:
+//         console.log('a가 4군요!');
+//         break;
+//     case 5:
+//         console.log('a가 5군요!');
+//         break;
+//     default:
+//         console.log('a가 무슨 값인지 모르겠습니다');
+//         break;
+// }
+
+// switch 실습
+// Quiz ) 학점계산기
+// 조건 0~100 외의 숫자는 들어오지 않는다고 가정
+// A~F등급
+// 힌트 : number / parseInt() , 10
+
+// let score = Number(prompt('점수를 입력하세요.'));
+// switch (true) {
+//     case (score>90 && score<=100):
+//         console.log('A');
+//         break;
+//     case (score>80):
+//         console.log('B');
+//         break;
+//     case (score>70):
+//         console.log('C');
+//         break;
+//     case (score>60):
+//         console.log('D');
+//         break;
+//     default: console.log('F');
+//         break;
+//     }
+
+// let score = Number(prompt('점수를 입력하세요.'));
+// console.log(parseInt(score/10));
+let score = 1;
+switch (parseInt(score/10)) {
+    case 10:
+    case 9:
+        console.log('A');
+        break;
+    case 8:
+        console.log('B');
+        break;
+    case 7:
+        console.log('C');
+        break;
+    case 6:
+        console.log('D');
+        break;
+    default:
+        console.log('F');
+        break;
+}
+
+// 삼항 연산자
+// 조건식 ? A : B
+// 조건식이 참이면 A 거짓이면 B
+// if 문을 더 간단하게
+
+// 일반 if문
+let num = 5;
+if(num%2==1){
+    console.log('홀수');
+}else{
+    console.log('짝수');
+}
+
+// 삼항연산자로 바꿔본다면?
+num%2==1 ? console.log('홀수') : console.log('짝수');
+
+// 실습 - new date
