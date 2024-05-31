@@ -1,6 +1,6 @@
 // 조건문
 
-// if문
+// * if문
 // if(5>3){
 //   console.log('집에 가고싶습니다.');
 // }
@@ -10,7 +10,7 @@
 // let num=Number(prompt('숫자를 입력해주세요'));
 
 
-// if~else문
+// * if~else문
 // if(num>10){
 //   console.log('입력한 수는 10보다 크다');
 // }else{
@@ -18,7 +18,7 @@
 // }
 
 
-// if~else if문
+// * if~else if문
 // if(num>10){
 //   console.log('입력한 수는 10보다 크다');
 // }else if(num === 10){
@@ -43,7 +43,7 @@
 // }
 
 
-// 중첩 if문
+// * 중첩 if문
 let userId = 'user01';
 let userPw = '1234';
 
@@ -147,7 +147,7 @@ switch (parseInt(score/10)) {
         break;
 }
 
-// 삼항 연산자
+// * 삼항 연산자
 // 조건식 ? A : B
 // 조건식이 참이면 A 거짓이면 B
 // if 문을 더 간단하게
@@ -163,4 +163,4 @@ if(num%2==1){
 // 삼항연산자로 바꿔본다면?
 num%2==1 ? console.log('홀수') : console.log('짝수');
 
-// 실습 - new date
+
