@@ -47,3 +47,25 @@ for(let i=0;i<fruits1.length;i++){
 }
 console.log(same);
 console.log(diff);
+
+console.log('-------------------------');
+
+// 내장객체 Date를 이용하여 오늘이 평일인지 주말인지 콘솔창에 출력
+// 조건문사용
+let today = new Date().getDay();
+console.log(today);
+
+switch (today) {
+  case 6:
+  case 7:
+    console.log('주말');
+    break;
+  default:
+    console.log('평일');
+    break;
+}
+
+// 0~10 사이의 랜덤한 숫자를 출력하는 프로그램
+// 0과 10 포함
+// 내장 객체 Math
+console.log(Math.floor(Math.random()*11));
