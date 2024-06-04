@@ -1,0 +1,30 @@
+/* 화면 넓이가 500px 이상 */
+@media screen and (min-width:500px) {
+  body{
+    background-color: skyblue;
+  }
+}
+/* 화면 넓이가 300px 이하 */
+@media screen and (max-width:300px) {
+  body{
+    background-color: orange;
+  }
+}
+/* 화면 높이가 300px 이하 */
+@media screen and (max-height:300px) {
+  p{
+    font-style: italic;
+    font-weight: bold;
+  }
+}
+/* 화면 높이가 500px 이상 */
+@media screen and (min-height:500px) {
+  p{
+    background-color: green;
+  }
+}
+
+
+
+
+
