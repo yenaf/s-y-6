@@ -16,13 +16,21 @@
     <form action="" method="">
         <!-- form 요소: 폼 태그 안에 있는 사용자의 입력값을 받는 요소 -->
         <!-- input, textarea, select... 태그들에는 name 속성을 가질 수 있다. "서버"와 연관-->
+        <!-- name 속성 : 폼요소에 각각 이름을 지정 
+            - 서버가 어떤 폼 요소에 어떤 값이 입력되었는지를 구별해줄 수 있는 key역할 
+        -->
         <!--  input태그 -->
 
         <!-- text -->
-        text <input type="text">
+        <!-- 자동으로 포커스된다 마치 네이버 검색창처럼 -->
+        text <input type="text" autofocus>
+
         <!-- disabled 속성: 편집을 불가능하도록 막음 -->
         <!-- disabled 개발자 도구에서 수정 가능하기때문에 프론트, 백엔드 둘다 신경써야함 -->
         text <input type="text" disabled>
+
+        <!-- readonly : 읽기전용 -->
+        text <input type="text" readonly value="안녕">
         
         <br>
         
@@ -83,6 +91,15 @@
             </optgroup>
         </select>
 
+        <br>
+        <br>
+
+        <!-- fieldset: 그룹화, legend: 그룹화한 제목 -->
+        <fieldset>
+            <legend>개인 정보</legend>
+            <label for="name">이름: </label><input type="text" id="name" /><br />
+            <label for="age">나이: </label><input type="text" id="age" />
+        </fieldset>
         <br>
         <br>
 

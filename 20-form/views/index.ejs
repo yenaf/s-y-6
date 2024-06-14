@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<body>
+  <!-- 폼 사용예시 -->
+  <!-- <form action="/폼 전송할 서버주소" name="폼이름" method="폼 전송방식">
+    <input type="text" />
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <select name="" id="">
+      <option value=""></option>
+      <option value=""></option>
+    </select>
+    <button type="submit"></button>
+  </form> -->
+
+  <h1> <%= title %> </h1>
+  <h2>GET 방식으로 요청하는 폼</h2>
+  <form action="/getForm" method="get">
+    <label for="id">아이디</label>
+    <input type="text" name="id" placeholder="아이디를 입력해주세요"/ required><br />
+    <label for="pw">비밀번호</label>
+    <input type="password" name="pw" placeholder="비밀번호를 입력해주세요" required/><br />
+    <button type="submit">get 방식으로 폼 제출</button>
+  </form>
+  <h2>POST 방식으로 요청하는 폼</h2>
+  <form action="/postForm" method="post">
+    <label for="id">아이디</label>
+    <input type="text" name="id" placeholder="아이디를 입력해주세요"/ required><br />
+    <label for="pw">비밀번호</label>
+    <input type="password" name="pw" placeholder="비밀번호를 입력해주세요" required/><br />
+    <button type="submit">post 방식으로 폼 제출</button>
+  </form>
+</body>
+</html>
