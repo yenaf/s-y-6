@@ -21,17 +21,26 @@
   <h2>GET 방식으로 요청하는 폼</h2>
   <form action="/getForm" method="get">
     <label for="id">아이디</label>
-    <input type="text" name="id" placeholder="아이디를 입력해주세요"/ required><br />
+    <!-- required : 이 입력란을 작성해주세요 라고 뜨면서 제출이 되지 않는다 -->
+    <input type="text" name="id" placeholder="아이디를 입력해주세요(최소 3글자)" required minlength="3"/><br />
     <label for="pw">비밀번호</label>
-    <input type="password" name="pw" placeholder="비밀번호를 입력해주세요" required/><br />
+    <input type="password" name="pw" placeholder="비밀번호를 입력해주세요(최소 4글자)" required minlength="4"/><br />
+    <!-- 이메일과 학년추가 - 이메일 필수값, 학년은 1~4까지만 입력 가능 -->
+    <label for="email">이메일</label>
+    <input type="email" name="email" id="email" required/>
+    <label for="grade"></label>
+    <input type="number" name="grade" id="grade" min="1" max="4" placeholder="1~4학년"/>
+    
     <button type="submit">get 방식으로 폼 제출</button>
   </form>
+  
   <h2>POST 방식으로 요청하는 폼</h2>
   <form action="/postForm" method="post">
     <label for="id">아이디</label>
-    <input type="text" name="id" placeholder="아이디를 입력해주세요"/ required><br />
+    <!-- pattern 속성을 썼을때 titlet속성을 사용하면 입력하지않고 제출했을때 안내문구로 보여준다 -->
+    <input type="text" name="id" placeholder="아이디를 입력해주세요"/ pattern="^([a-zA-Z0-9가-힣]){4,}$" title="대소문자, 한글, 숫자, 4글자 이상" required><br />
     <label for="pw">비밀번호</label>
-    <input type="password" name="pw" placeholder="비밀번호를 입력해주세요" required/><br />
+    <input type="password" name="pw" placeholder="비밀번호를 입력해주세요" pattern="^([a-z0-9]){8,12}$" title="소문자, 숫자로 8자리 이상 12자리 이하" required/><br />
     <button type="submit">post 방식으로 폼 제출</button>
   </form>
 </body>
