@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>get방식으로 회원정보 가져오기</title>
+</head>
+<body>
+  <h1><%= title %></h1>
+  <ul>
+    <li>이름 : <span><%= userInfo.name %></span></li>
+    <li>성별 : <span><%= userInfo.gender %></span></li>
+    <li>생년월일 : <span><%= `${userInfo.year}-${userInfo.month}-${userInfo.day}` %></span></li>
+    <li>관심사 : <span><%= userInfo.interest %></span></li>
+  </ul>
+</body>
+</html>
