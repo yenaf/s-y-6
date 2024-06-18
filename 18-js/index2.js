@@ -1,6 +1,7 @@
 // 클래스
 // Constructor (생성자)
 class House{
+  // 생성자 함수, 객체의 속성(내부에서 사용할 변수) 부여
   constructor(year, name, window){
     this.year = year;
     this.name = name;
@@ -16,11 +17,11 @@ class House{
 
 const house1 = new House(1990,'롯데',1);
 // 클래스를 이용해서 인스턴스 생성시 컨스트럭터에 선언된 매개변수대로 값을 지정해야한다
-console.log(house1);
-console.log(typeof house1);
-console.log(house1.year);
-house1.getAge();
-house1.getWindow();
+console.log(house1);//House { year: 1990, name: '롯데', window: 1 }
+console.log(typeof house1);//object
+console.log(house1.year);//1990
+house1.getAge();//롯데는 건축한지 34년 되었어요!
+house1.getWindow();//롯데의 창문은 1개 입니다!
 console.log('------------------------');
 
 // 부모의 속성을 가져올때 super

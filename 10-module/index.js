@@ -26,6 +26,7 @@ console.log('-----------------');
 
 */
 // ()() -> 함수의 자동실행 형태
+// 즉시실행함수
 (function(){
   const superHero = 'Superman';
   console.log(superHero);
