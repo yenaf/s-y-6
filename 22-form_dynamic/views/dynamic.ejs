@@ -85,6 +85,48 @@
         })
     }
   
+    async function axiosGet(){
+      // 1. 이름 미입력시 이름을 입력해주세요 문구 출력
+      // 2. 성별 미입력시 성별을 선택해주세요
+      // 3. 이름과 성별이 모두 입력된다면 정상정으로 요청 날리기
+
+      const form = document.forms['register'];
+      const data={
+        name : form.name.value,
+        gender : form.gender.value
+      }
+
+      console.log(form.name.checkValidity());
+      console.log(form.gender[0].checkValidity());
+      console.log(form.gender[1].checkValidity());
+
+      // radio type input은 둘 중 하나라도 check 되면 전부 true 출력, 아니면 false가 출력
+
+      if(!form.name.checkValidity()){
+        resultBox.textContent = '이름을 입력해주세요';
+      }else if(!form.gender[0].checkValidity()){
+        resultBox.textContent = '성별을 선택해주세요';
+      }else{
+
+        try {
+          const res = await axios({
+            method : 'GET',
+            url : `./axios?name=${form.name.value}&gender=${form.gender.value}`,
+          })
+          console.log(res);
+          console.log(res.data);
+          const {name ,gender} = res.data;
+          resultBox.textContent = `GET / axios 요청에 대한 응답완료! ${name}님은 ${gender}이시죠?`;
+          resultBox.style.color='green';
+          
+        } catch (error) {
+          console.error('Error',err);
+          resultBox.textContent = '알수없는 에러 발생. 다시 시도해주세요!'
+        }
+      }
+
+    }
+
     function axiosGet(){
       // 1. 이름 미입력시 이름을 입력해주세요 문구 출력
       // 2. 성별 미입력시 성별을 선택해주세요
