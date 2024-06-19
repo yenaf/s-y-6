@@ -28,7 +28,6 @@ const uploadDetail = multer({
 app.use('/uploads', express.static(__dirname + '/uploads'));
 
 // 동적파일 업로드하기위한 static 미들웨어 추가 
-
 app.use('/static', express.static(__dirname + '/public'));
 
 // const upload = multer({
@@ -79,6 +78,10 @@ app.post('/dynamicFile',uploadDetail.single('thumbnail'),(req,res) => {
   res.send(req.file);
 })
 
+// 실습) 회원가입 폼 파일업로드
+app.post('/join',uploadDetail.single('profile'),(req,res) => {
+  res.send(req.file);
+})
 
 
 app.get('/', function (req, res) {

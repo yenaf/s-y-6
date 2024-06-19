@@ -45,6 +45,26 @@
     <input type="file" name="thumbnail" id="thumbnail" />
     <button type="button" onclick="uploadThumbnail()">등록</button>
 
-    <script src="static/js/thumbnail.js"></script>
+
+    <!-- 실습 -->
+     <h2>파일업로드 실습</h2>
+     <form action="/join" method="post" enctype="multipart/form-data">
+        <input type="text" name="id" placeholder="아이디"/><br />
+        <input type="password" name="password" placeholder="비밀번호"/><br />
+        <input type="text" name="userName" placeholder="이름" /><br />
+        <input type="number" name="age" placeholder="나이"/><br />
+        <input type="file" name="profile" id="profile" /><br />
+        <button type="button" onclick="uploadProfile()">회원가입</button>
+     </form>
+
+     <div>
+        <img class="profile" src="" alt="" />
+        <span>님 환영합니다!</span>
+        <span>비밀번호 : </span>
+        <span>이름 : </span>
+        <span>나이 : </span>
+     </div>
+
+     <script src="static/js/thumbnail.js"></script>
 </body>
 </html>

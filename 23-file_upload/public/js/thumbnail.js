@@ -1,5 +1,3 @@
-console.log("!");
-
 function uploadThumbnail(){
   // FormData 객체
   // 폼전송 할 때, 멀티미디어 파일을 비동기로 제출하고 싶다면 FormData 객체를 이용
@@ -27,4 +25,28 @@ function uploadThumbnail(){
     document.querySelector('img').src = `/${res.data.path}`;
     // document.querySelector('img').classList.add('thumbnail');
   })
+}
+
+
+function uploadProfile(){
+  const formData = new FormData();
+
+  const fileInput = document.querySelector('#profile');
+  console.dir(fileInput);
+  console.dir(fileInput.files);
+  formData.append('thumbnail',fileInput.files[0]);
+
+  axios({
+    method : 'POST',
+    url : '/join',
+    data : formData,
+    headers : {
+      'Content-Type' : 'multipart/form-data'
+    }
+  }).then(function(res){
+    console.log(res);
+    console.log(res.data.path);
+    document.querySelector('.profile').src = `/${res.data.path}`;
+  })
+
 }
