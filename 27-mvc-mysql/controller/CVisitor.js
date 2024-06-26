@@ -1,3 +1,4 @@
+// 컨트롤러와 모델(데이터) 연결
 const Visitor = require('../model/Visitor');
 
 // (1) GET / => localhost:PORT/
@@ -34,3 +35,31 @@ exports.postVisitor = (req,res) =>{
     });
   });
 }
+
+exports.deleteVisitor = (req, res) => {
+  console.log(req.body);
+
+  Visitor.deleteVisitor(req.body.id, (result) => {
+    console.log('controller/CVisitor.js >> ', result);
+    
+    res.send({ result }); // { result: result }
+  })
+}
+
+exports.getVisitor = (req, res) => {
+  // req.params.id: // 조회해야할 id
+  Visitor.getVisitor(req.params.id, (result) => {
+    res.send(result);
+  }); 
+}
+
+exports.patchVisitor = (req, res) => {
+  console.log(req.body);
+
+  Visitor.patchVisitor(req.body, (result) => {
+    console.log('controller/CVisitor.js >> ', result);
+
+    res.send({result});
+  })
+}
+
