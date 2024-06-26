@@ -29,6 +29,9 @@ const uploadDetail = multer({
     filename(req,file,done){ // filename : 파일명
       const ext = path.extname(file.originalname);//파일의 확장자를 추출
       done(null,path.basename(file.originalname,ext) + Date.now() + ext)
+      // 예를 들어, 파일 이름이 "uploads/profile.jpg"인 경우:
+      // path.basename(file.originalname) 결과: "profile.jpg"
+      // path.basename(file.originalname, '.jpg') 결과: "profile"
     },
   }),
   limits : {fileSize : 5*1024*1024},//limits : 파일 제한,fileSize : 파일 사이즈 제한

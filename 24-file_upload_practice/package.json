@@ -1,6 +1,7 @@
 {
-  "name": "24-file_upload2",
+  "name": "24-file_upload_practice",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -8,10 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "multer": "^1.4.5-lts.1"
+    "multer": "^1.4.4"
   }
 }
