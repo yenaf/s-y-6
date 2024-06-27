@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<body>
+  <h1><%= title %></h1>
+  <form action="/join" method="post">
+    <input type="text" name="userid" placeholder="아이디" /><br />
+    <input type="password" name="userpwd" placeholder="비밀번호" /><br />
+    <input type="text" name="username" placeholder="이름" /><br />
+    <button>가입하기</button>
+  </form>
+  <a href="/user/signin">로그인 페이지로 가기</a>
+
+  <script src="/static/signup.js"></script>
+</body>
+</html>
