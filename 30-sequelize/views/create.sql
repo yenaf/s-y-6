@@ -44,5 +44,5 @@ insert into profile(position, salary, createdAt, updatedAt, player_id) values
 select * from player;
 select * from profile;
 select * from team;
--- select * from game;
--- select * from teamgame;
+select * from game;
+select * from teamgame;

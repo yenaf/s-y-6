@@ -3,6 +3,7 @@ const app = express();
 const PORT = 8000;
 const router = require('./routes/index');
 const playerRouter = require('./routes/player');
+const teamRouter = require('./routes/team');
 const { sequelize } = require('./models'); //db객체중에서 sequelize 꺼내옴
 
 app.set('view engine','ejs');
@@ -11,6 +12,8 @@ app.use(express.urlencoded({extended : true}));
 app.use(express.json());
 app.use('/',router);
 app.use('/players',playerRouter);
+app.use('/teams',teamRouter);
+
 
 // 프로미스(Promise)를 반환한다!! (.then()을 붙여서 결과값 사용 가능)
 sequelize
