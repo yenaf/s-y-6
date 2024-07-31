@@ -1,22 +1,38 @@
-/* .boderI{
+/* 백그라운드활용한 인스타 이미지 만들기 */
+div {
+    border-radius: 50%;
+  }
+  .insta {
+    position: relative;
+    background: linear-gradient(45deg, #ffe600 10%, #ff0080, #db20db);
     width: 300px;
     height: 300px;
-    border: 2px solid white;
-    border-radius: 50%;
-    background-image: url(./img/cat.jpg);
-    background-repeat: no-repeat;
+  }
+  .insta > .img {
+    /* 중앙정렬 */
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+
+    /* 계산하기 쉽도록 box-sizing :border-box설정*/
+    box-sizing: border-box;
+
+    /* border + content 크기가 285px */
+    border: 5px solid white;
+    width: 285px;
+    height: 285px;
+
+    /* background-image 관련 속성 */
+    /* background-image: url('./img/코디.png');
+    background-color: white;
+    background-position: center;
     background-size: cover;
-    outline: 4px solid pink;
-} */
+    background-repeat: no-repeat; */
 
-.backgroundC{
-    width: 300px;
-    height: 300px;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    background: linear-gradient(230deg,orange,pink,red);
-}
-
-/* .backgroundI{
-    
-} */
+    /* 단축속성 */
+    /* background : color image repeat position/size */
+    background: white url('./img/cat0.jpg') no-repeat 0 center/cover;
+  }

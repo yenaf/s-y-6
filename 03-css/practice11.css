@@ -1,13 +1,18 @@
 body{
   /* background-color: aqua; */
-  /* margin: 0; */
-  /* padding: 0; */
+  margin: 0;
+  padding: 0;
 }
+
+/* 공 움직이기 */
 .ball1{
   width: 100px;
   height: 100px;
-  background: linear-gradient(30deg, orange, yellow);
+  background: linear-gradient(45deg, yellow, orange, 70%, orangered);
+  box-shadow: -5px 5px 10px inset rgba(51, 51, 51, 0.407);
   border-radius: 50%;
+
+  /* animation: move-ball 5s linear infinite; */
   animation-name: move-ball;
   animation-duration: 5s;
   animation-delay: 1s;
@@ -41,10 +46,11 @@ body{
   }
 }
 
-
+/* 글자 움직이기 */
 .move-txt{
-  animation: move-txt 1s ease-in-out ;
-  width: 100%;
+  /* animation: move-txt 1s ease-in-out ; */
+  /* width: 100%; */
+  animation: 3s move-txt;
 }
 
 @keyframes move-txt{
