@@ -1,0 +1,14 @@
+.login{
+  text-align: center;
+  width: 500px;
+}
+.login h2{
+  margin: auto;
+  background-color: bisque;
+  color: orange;
+  width: 200px;
+}
+
+.login div input{
+  margin-top: 20px;
+}
