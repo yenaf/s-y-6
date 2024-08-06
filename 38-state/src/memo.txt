@@ -1,3 +1,5 @@
+Visual Studio Code 환경에서 "Reactjs Code snippet" 라이브러리를 사용하면 편하게 생성 가능
+
 ** 컴포넌트 별 단축키
 // react 컴포넌트를 빠르게 생성하기 위한 스니펫!
 
