@@ -1,3 +1,5 @@
+// state 실습 1
+
 import React, { Component } from 'react'
 
 export default class StatePractice1 extends Component {

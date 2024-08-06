@@ -1,3 +1,4 @@
+// state 실습 2
 import React, { useState } from 'react'
 
 export default function StatePractice2() {
