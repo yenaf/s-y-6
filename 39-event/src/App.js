@@ -1,6 +1,7 @@
 import './App.css';
 import ClassBind from './ClassBind';
 import Counter from './Counter';
+import EventStudy from './EventStudy';
 import HandlerEx from './HandlerEx';
 import HandlerEx2 from './HandlerEx2';
 import HandlerEx3 from './HandlerEx3';
@@ -25,6 +26,9 @@ function App() {
       <hr />
 
       <HandlerEx3/>
+      <hr />
+
+      <EventStudy/>
 
     </div>
   );
