@@ -23,7 +23,7 @@ export default function Prac1() {
       setWriter('');
       setTitle('');
     }else{
-      alert('아무것도 작성하지 않으셨네요!');
+      alert('작성자와 제목을 작성해주세요!');
     }
   }
 

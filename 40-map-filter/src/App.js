@@ -4,6 +4,7 @@ import Alpahbet from './Alpahbet';
 import Alpahbet2 from './Alpahbet2';
 import './App.css';
 import Base from './Base';
+import Prac2 from './Prac2';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <Base/> */}
       {/* <Alpahbet/> */}
       {/* <Alpahbet2/> */}
-      <AddInfo/>
+      {/* <AddInfo/> */}
+      <Prac2/>
     </div>
   );
 }
