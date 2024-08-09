@@ -1,0 +1,23 @@
+h2{
+  width: 100%;
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+
+.list{
+  margin: auto;
+}
+
+ul{
+  list-style: none;
+}
+li{
+  width: 500px;
+  background-color: skyblue;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px 20px;
+  margin: 20px auto; 
+}
